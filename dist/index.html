@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="page no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Markup</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+<body class="page__body">
+  <header class="header"></header>
+  <div class="page__wrapper">
+    <main class="main page__main">
+      <div class="page__container">
+        <h1 class="visually-hidden">Главная страница</h1>
+        <section class="reviews page__reviews">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__slider grid-X owl-carousel owl-theme" id="slider">
+        
+              <blockquote class="reviews__slide ceil">
+                <div class="reviews__avatar">
+                  <img src="assets/img/avatar-01.jpg" width="82" height="82" alt="Аватар автора отзыва">
+                </div>
+                <cite class="reviews__author">Влад Гончаров</cite>
+                <a href="#" class="reviews__link">vk.com/ex3der</a>
+                <p class="reviews__message">Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый   взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт.</p>
+              </blockquote>
+        
+              <blockquote class="reviews__slide ceil">
+                <div class="reviews__avatar">
+                  <img src="assets/img/avatar-02.jpg" width="82" height="82" alt="Аватар автора отзыва">
+                </div>
+                <cite class="reviews__author">Ваня Мирошников</cite>
+                <a href="#" class="reviews__link">vk.com/id16362672</a>
+                <p class="reviews__message">Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый   взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт.</p>
+              </blockquote>
+        
+              <blockquote class="reviews__slide ceil">
+                <div class="reviews__avatar">
+                  <img src="assets/img/avatar-03.jpg" width="82" height="82" alt="Аватар автора отзыва">
+                </div>
+                <cite class="reviews__author">Алексей Волков</cite>
+                <a href="#" class="reviews__link">vk.com/asgalex</a>
+                <p class="reviews__message">Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый   взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт.</p>
+              </blockquote>
+        
+              <blockquote class="reviews__slide ceil">
+                <div class="reviews__avatar">
+                  <img src="assets/img/avatar-01.jpg" width="82" height="82" alt="Аватар автора отзыва">
+                </div>
+                <cite class="reviews__author">Влад Гончаров</cite>
+                <a href="#" class="reviews__link">vk.com/ex3der</a>
+                <p class="reviews__message">Предсознательное иллюстрирует девиантный филогенез. Восприятие, на первый   взгляд, отчуждает генезис. Филогенез, например, слабопроницаем. Действие притягивает депрессивный инсайт.</p>
+              </blockquote>
+        
+          </div>
+        
+        <script id="slide" type="text/x-handlebars-template">
+        
+          <blockquote class="reviews__slide">
+            <div class="reviews__avatar">
+              <img src="assets/img/" width="82" height="82" alt="Аватар автора отзыва">
+            </div>
+            <cite class="reviews__author"></cite>
+            <a href="#" class="reviews__link"></a>
+            <p class="reviews__message"></p>
+          </blockquote>
+        
+        </script>
+        
+        </section>
+        <section class="feedback">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <form method="post" action="https://echo.htmlacademy.ru" class="feedback__form" id="form">
+            <label class="feedback__input-wrapper">
+              <input type="text" class="feedback__input" name="name" placeholder="Ваше имя" data-error="#err1">
+              <span class="feedback__input-error" id="err1"></span>
+            </label>
+            <label class="feedback__input-wrapper">
+              <input type="tel" class="feedback__input" name="phone" placeholder="Ваш телефон *" required data-error="#err2">
+              <span class="feedback__input-error" id="err2"></span>
+            </label>
+            <label class="feedback__input-wrapper">
+              <input type="email" class="feedback__input" name="email" placeholder="Ваш email *" required data-error="#err3">
+              <span class="feedback__input-error" id="err3"></span>
+            </label>
+            <label class="feedback__input-wrapper feedback__input-wrapper--text">
+              <textarea class="feedback__input feedback__input--text" name="message" placeholder="Сообщение" data-error="#err4"></textarea>
+              <span class="feedback__input-error" id="err4"></span>
+            </label>
+            <label class="feedback__checkbox-wrapper">
+              <input type="checkbox" class="feedback__checkbox" name="agreement" required data-error="#err5">
+              <span class="feedback__checkbox-indicator"></span>
+              <span class="feedback__text">Согласен на обработку персональных данных</span>
+              <span class="feedback__checkbox-error" id="err5"></span>
+            </label>
+            <label class="feedback__file-wrapper">
+              <input type="file" class="feedback__file">
+              <span class="feedback__file-indicator">Прикрепить файл</span>
+            </label>
+            <button class="feedback__button" type="submit">Отправить</button>
+            <p class="feedback__caption">* обязательные для заполнения</p>
+            <p class="feedback__caption">Макс. размер файла: 10 МБ</p>
+          </form>
+        </section>
+      </div>
+      
+    </main>
+  </div>
+  <footer class="footer"></footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
