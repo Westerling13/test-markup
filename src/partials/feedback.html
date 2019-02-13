@@ -1,14 +1,27 @@
 <section class="feedback">
   <h2 class="visually-hidden">Форма обратной связи</h2>
-  <form method="post" class="feedback__form">
-    <input type="text" class="feedback__input" name="name" placeholder="Ваше имя">
-    <input type="tel" class="feedback__input" name="phone" placeholder="Ваш телефон *" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-    <input type="email" class="feedback__input" name="email" placeholder="Ваш email *" required>
-    <textarea class="feedback__input feedback__input--text" name="message" placeholder="Сообщение"></textarea>
+  <form method="post" action="https://echo.htmlacademy.ru" class="feedback__form" id="form">
+    <label class="feedback__input-wrapper">
+      <input type="text" class="feedback__input" name="name" placeholder="Ваше имя" data-error="#err1">
+      <span class="feedback__input-error" id="err1"></span>
+    </label>
+    <label class="feedback__input-wrapper">
+      <input type="tel" class="feedback__input" name="phone" placeholder="Ваш телефон *" required data-error="#err2">
+      <span class="feedback__input-error" id="err2"></span>
+    </label>
+    <label class="feedback__input-wrapper">
+      <input type="email" class="feedback__input" name="email" placeholder="Ваш email *" required data-error="#err3">
+      <span class="feedback__input-error" id="err3"></span>
+    </label>
+    <label class="feedback__input-wrapper feedback__input-wrapper--text">
+      <textarea class="feedback__input feedback__input--text" name="message" placeholder="Сообщение" data-error="#err4"></textarea>
+      <span class="feedback__input-error" id="err4"></span>
+    </label>
     <label class="feedback__checkbox-wrapper">
-      <input type="checkbox" class="feedback__checkbox" required>
+      <input type="checkbox" class="feedback__checkbox" name="agreement" required data-error="#err5">
       <span class="feedback__checkbox-indicator"></span>
       <span class="feedback__text">Согласен на обработку персональных данных</span>
+      <span class="feedback__checkbox-error" id="err5"></span>
     </label>
     <label class="feedback__file-wrapper">
       <input type="file" class="feedback__file">
