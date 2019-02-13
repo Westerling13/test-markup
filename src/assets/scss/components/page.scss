@@ -3,19 +3,18 @@
     width: 100%;
   }
 
-  &__main {
+  &__container {
+    padding: 65px 16px 33px;
+    background-color: #ffffff;
+  }
+
+  &__wrapper {
     max-width: $global-width;
     width: 100%;
-    //width: 320px;
     margin: 0 auto;
     padding: 12px;
 
     background-color: #fff1ed;
-  }
-
-  &__wrapper {
-    padding: 65px 16px 33px;
-    background-color: #ffffff;
   }
 
   &__reviews {
@@ -25,12 +24,12 @@
 
 @media (min-width: 800px) {
   .page {
-    &__main {
-      padding: 27px 43px;
+    &__container {
+      padding: 16px 32px 104px;
     }
 
     &__wrapper {
-      padding: 16px 32px 104px;
+      padding: 27px 43px;
     }
 
     &__reviews {
