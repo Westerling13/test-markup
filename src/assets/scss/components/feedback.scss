@@ -113,8 +113,14 @@
     }
   }
 
-  &__checkbox-wrapper:hover + &__checkbox-indicator {
-    border-color: #ff8091;
+  &__checkbox-wrapper:hover{
+    .feedback__checkbox-indicator {
+      border-color: #ff8091;
+    }
+
+    .feedback__text {
+      color: #ff8091;
+    }
   }
 
   &__checkbox:checked + &__checkbox-indicator::before,
@@ -215,6 +221,13 @@
 
     border-color: rgba(#000000, 0.7);
     opacity: 0.7;
+  }
+
+  &__file-wrapper:hover {
+    .feedback__file-indicator {
+      border-color: #ff8091;
+      color: #ff8091;
+    }
   }
 
   &__button {
