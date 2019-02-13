@@ -26,6 +26,8 @@
     &::placeholder {
       color: #000000;
 
+      opacity: 1;
+
       transition: all 200ms ease-out;
     }
 
@@ -109,6 +111,10 @@
     &::after {
       transform: translate(-50%, -50%) rotate(135deg);
     }
+  }
+
+  &__checkbox-wrapper:hover + &__checkbox-indicator {
+    border-color: #ff8091;
   }
 
   &__checkbox:checked + &__checkbox-indicator::before,
