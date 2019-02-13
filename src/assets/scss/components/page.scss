@@ -1,0 +1,40 @@
+.page {
+  &__body {
+    width: 100%;
+  }
+
+  &__main {
+    max-width: $global-width;
+    width: 100%;
+    //width: 320px;
+    margin: 0 auto;
+    padding: 12px;
+
+    background-color: #fff1ed;
+  }
+
+  &__wrapper {
+    padding: 65px 16px 33px;
+    background-color: #ffffff;
+  }
+
+  &__reviews {
+    margin: 0 15px 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .page {
+    &__main {
+      padding: 27px 43px;
+    }
+
+    &__wrapper {
+      padding: 16px 32px 104px;
+    }
+
+    &__reviews {
+      margin: 0 0 136px;
+    }
+  }
+}

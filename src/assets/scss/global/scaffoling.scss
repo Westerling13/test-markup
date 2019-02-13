@@ -1,0 +1,43 @@
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 41%;
+
+  transform: translateY(-41%);
+}
+
+.owl-next {
+  right: -45px;
+}
+
+.owl-prev {
+  left: -45px;
+}
+
+@media (min-width: 800px) {
+  .owl-prev,
+  .owl-next {
+    transform: translateY(-41%) scale(1.3);
+  }
+
+  .owl-next {
+    right: -58px;
+  }
+
+  .owl-prev {
+    left: -58px;
+  }
+}

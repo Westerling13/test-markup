@@ -1,0 +1,21 @@
+<section class="feedback">
+  <h2 class="visually-hidden">Форма обратной связи</h2>
+  <form method="post" class="feedback__form">
+    <input type="text" class="feedback__input" name="name" placeholder="Ваше имя">
+    <input type="tel" class="feedback__input" name="phone" placeholder="Ваш телефон *" required>
+    <input type="email" class="feedback__input" name="email" placeholder="Ваш email *" required>
+    <textarea class="feedback__input feedback__input--text" name="message" placeholder="Сообщение"></textarea>
+    <label class="feedback__checkbox-wrapper">
+      <input type="checkbox" class="feedback__checkbox" required>
+      <span class="feedback__checkbox-indicator"></span>
+      <span class="feedback__text">Согласен на обработку персональных данных</span>
+    </label>
+    <label class="feedback__file-wrapper">
+      <input type="file" class="feedback__file">
+      <span class="feedback__file-indicator">Прикрепить файл</span>
+    </label>
+    <button class="feedback__button" type="submit">Отправить</button>
+    <p class="feedback__caption">* обязательные для заполнения</p>
+    <p class="feedback__caption">Макс. размер файла: 10 МБ</p>
+  </form>
+</section>

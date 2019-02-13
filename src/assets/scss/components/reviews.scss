@@ -1,0 +1,106 @@
+.reviews {
+  padding: 49px 21px 14px;
+
+  box-shadow: 5px 9px 30px #ffeef0;
+
+  &__title {
+    margin: 0 0 36px;
+
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__avatar {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 16px;
+
+    border-radius: 50%;
+    background-color: #ff6c7e;
+    overflow: hidden;
+  }
+
+  &__author {
+    display: block;
+    margin: 0 auto 11px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto 15px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #ff6c7e;
+  }
+
+  &__message {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__left,
+  &__right {
+    width: 49px;
+    height: 27px;
+
+    background-image: url("../img/icon-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__right {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 800px) {
+  .reviews {
+    padding: 40px 33px 15px;
+
+    &__title {
+      margin-bottom: 62px;
+    }
+
+    &__avatar {
+      margin-bottom: 17px;
+    }
+
+    &__author {
+      margin-bottom: 7px;
+    }
+
+    &__link {
+      margin-bottom: 12px;
+    }
+  }
+}

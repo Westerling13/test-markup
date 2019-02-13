@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import 'what-input';
+import 'slick-carousel';
+import 'owl.carousel';
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
@@ -13,5 +15,19 @@ require('foundation-sites');
 // the line below
 //import './lib/foundation-explicit-pieces';
 
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  center: true,
+  nav: true,
+  navText: ["<div class='reviews__left'></div>","<div class='reviews__right'></div>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    700: {
+      items: 3
+    }
+  }
+});
 
 $(document).foundation();
