@@ -5,6 +5,20 @@
   &__form {
     width: 100%;
     padding-left: 7px;
+
+    @media (min-width: 800px) {
+      position: relative;
+
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 722px;
+      margin: 0 auto;
+      padding: 34px 36px 32px;
+
+      box-shadow: 0 10px 30px #fff1f2;
+    }
   }
 
   &__input {
@@ -23,6 +37,11 @@
 
     transition: all 200ms ease-out;
 
+    @media (min-width: 800px) {
+      width: 40%;
+      margin: 0 5% 41px;
+    }
+
     &::placeholder {
       color: #000000;
 
@@ -36,6 +55,11 @@
       margin-bottom: 28px;
 
       resize: none;
+
+      @media (min-width: 800px) {
+        height: 154px;
+        margin-bottom: 46px;
+      }
     }
 
     &:focus::placeholder {
@@ -62,6 +86,11 @@
     cursor: pointer;
 
     transition: all 200ms ease-out;
+
+    @media (min-width: 800px) {
+      width: 90%;
+      margin:0 auto 33px;
+    }
   }
 
   &__checkbox,
@@ -89,6 +118,10 @@
     border-radius: 4px;
 
     transition: all 200ms ease-out;
+
+    @media (min-width: 800px) {
+      margin-right: 14px;
+    }
 
     &::before,
     &::after {
@@ -166,6 +199,12 @@
     line-height: 19px;
 
     transition: all 200ms ease-out;
+
+    @media (min-width: 800px) {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+    }
   }
 
   &__file-indicator {
@@ -189,6 +228,13 @@
 
     transition: all 200ms ease-out;
 
+    @media (min-width: 800px) {
+      width: 277px;
+      padding-left: 66px;
+
+      letter-spacing: 2.1px;
+    }
+
     &:active {
       border-color: #000000;
     }
@@ -208,6 +254,10 @@
       background-position: -10px -66px;
 
       transform: translateY(-50%);
+
+      @media (min-width: 800px) {
+        left: 27px;
+      }
     }
   }
 
@@ -222,6 +272,14 @@
 
     border-color: rgba(#000000, 0.7);
     opacity: 0.7;
+  }
+
+  @media (min-width: 800px) {
+    &__file-wrapper {
+      position: absolute;
+      top: 213px;
+      left: 68px;
+    }
   }
 
   &__file-wrapper:hover {
@@ -248,6 +306,12 @@
 
     transition: all 200ms ease-out;
 
+    @media (min-width: 800px) {
+      width: 90%;
+      margin: 0 auto 24px;
+      letter-spacing: 2px;
+    }
+
     &:focus,
     &:hover {
       outline: none;
@@ -271,75 +335,8 @@
     color: #000000;
 
     opacity: 0.4;
-  }
-}
 
-@media (min-width: 800px) {
-  .feedback {
-
-    &__form {
-      position: relative;
-
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: space-between;
-      max-width: 722px;
-      margin: 0 auto;
-      padding: 34px 36px 32px;
-
-      box-shadow: 0 10px 30px #fff1f2;
-    }
-
-    &__input {
-      width: 40%;
-      margin: 0 5% 41px;
-
-      &--text {
-        height: 154px;
-        margin-bottom: 46px;
-      }
-    }
-
-    &__file-wrapper {
-      position: absolute;
-      top: 213px;
-      left: 68px;
-    }
-
-    &__file-indicator {
-      width: 277px;
-      padding-left: 66px;
-
-      letter-spacing: 2.1px;
-
-      &::before {
-        left: 27px;
-      }
-    }
-
-    &__checkbox-wrapper {
-      width: 90%;
-      margin:0 auto 33px;
-    }
-
-    &__checkbox-indicator {
-      margin-right: 14px;
-    }
-
-    &__text {
-      font-size: 18px;
-      line-height: 24px;
-      font-weight: 500;
-    }
-
-    &__button {
-      width: 90%;
-      margin: 0 auto 24px;
-      letter-spacing: 2px;
-    }
-
-    &__caption {
+    @media (min-width: 800px) {
       margin: 0 36px;
     }
   }

@@ -6,6 +6,10 @@
   &__container {
     padding: 65px 16px 33px;
     background-color: #ffffff;
+
+    @media (min-width: 800px) {
+      padding: 16px 32px 104px;
+    }
   }
 
   &__wrapper {
@@ -15,24 +19,16 @@
     padding: 12px;
 
     background-color: #fff1ed;
+
+    @media (min-width: 800px) {
+      padding: 27px 43px;
+    }
   }
 
   &__reviews {
     margin: 0 15px 40px;
-  }
-}
 
-@media (min-width: 800px) {
-  .page {
-    &__container {
-      padding: 16px 32px 104px;
-    }
-
-    &__wrapper {
-      padding: 27px 43px;
-    }
-
-    &__reviews {
+    @media (min-width: 800px) {
       margin: 0 0 136px;
     }
   }
