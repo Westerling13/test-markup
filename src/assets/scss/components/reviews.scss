@@ -74,9 +74,9 @@
     width: 49px;
     height: 27px;
 
-    background-image: url("../img/icon-arrow.png");
+    background-image: url("../img/css_sprites.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: -96px -10px;
   }
 
   &__right {
@@ -102,6 +102,14 @@
 
     &__link {
       margin-bottom: 12px;
+    }
+
+    &__left,
+    &__right {
+      width: 66px;
+      height: 36px;
+
+      background-position: -10px -10px;
     }
   }
 }
