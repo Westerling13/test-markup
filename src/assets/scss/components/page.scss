@@ -5,9 +5,9 @@
 
   &__container {
     padding: 65px 16px 33px;
-    background-color: #ffffff;
+    background-color: $white;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       padding: 16px 32px 104px;
     }
   }
@@ -20,7 +20,7 @@
 
     background-color: #fff1ed;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       padding: 27px 43px;
     }
   }
@@ -28,7 +28,7 @@
   &__reviews {
     margin: 0 15px 40px;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       margin: 0 0 136px;
     }
   }

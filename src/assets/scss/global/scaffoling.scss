@@ -27,7 +27,7 @@
   left: -45px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: $global-width) {
   .owl-prev,
   .owl-next {
     transform: translateY(-41%);

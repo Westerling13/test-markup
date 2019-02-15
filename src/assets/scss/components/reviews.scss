@@ -3,7 +3,7 @@
 
   box-shadow: 5px 9px 30px #ffeef0;
 
-  @media (min-width: 800px) {
+  @media (min-width: $global-width) {
     padding: 40px 33px 15px;
   }
 
@@ -16,7 +16,7 @@
     text-align: center;
     color: $black;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       margin-bottom: 62px;
     }
   }
@@ -40,7 +40,7 @@
     background-color: $primary-color;
     overflow: hidden;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       margin-bottom: 17px;
     }
   }
@@ -56,7 +56,7 @@
     text-align: center;
     color: $black;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       margin-bottom: 7px;
     }
   }
@@ -72,7 +72,7 @@
     text-decoration: none;
     color: $primary-color;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       margin-bottom: 12px;
     }
   }
@@ -98,7 +98,7 @@
     background-repeat: no-repeat;
     background-position: -96px -10px;
 
-    @media (min-width: 800px) {
+    @media (min-width: $global-width) {
       width: 66px;
       height: 36px;
 
