@@ -30,10 +30,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
-    color: #000000;
+    color: $black;
 
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid $black;
 
     transition: all 200ms ease-out;
 
@@ -43,7 +43,7 @@
     }
 
     &::placeholder {
-      color: #000000;
+      color: $black;
 
       opacity: 1;
 
@@ -67,14 +67,14 @@
     }
 
     &:hover::placeholder {
-      color: #ff8091;
+      color: $primary-color;
     }
 
     &:focus,
     &:hover {
       outline: none;
 
-      border-color: #ff8091;
+      border-color: $primary-color;
     }
   }
 
@@ -114,7 +114,7 @@
     height: 24px;
     margin-right: 11px;
 
-    border: 1px solid #000000;
+    border: 1px solid $black;
     border-radius: 4px;
 
     transition: all 200ms ease-out;
@@ -134,7 +134,7 @@
       width: 20px;
       height: 1px;
 
-      background-color: #000000;
+      background-color: $black;
       opacity: 0;
 
       transform: translate(-50%, -50%) rotate(45deg);
@@ -148,11 +148,11 @@
 
   &__checkbox-wrapper:hover{
     .feedback__checkbox-indicator {
-      border-color: #ff8091;
+      border-color: $primary-color;
     }
 
     .feedback__text {
-      color: #ff8091;
+      color: $primary-color;
     }
   }
 
@@ -165,27 +165,27 @@
   &__checkbox:hover + &__checkbox-indicator,
   &__checkbox:focus ~ &__text,
   &__checkbox:hover ~ &__text {
-    border-color: #ff8091;
-    color: #ff8091;
+    border-color: $primary-color;
+    color: $primary-color;
   }
 
   &__checkbox:focus + &__checkbox-indicator::before,
   &__checkbox:focus + &__checkbox-indicator::after,
   &__checkbox:hover + &__checkbox-indicator::before,
   &__checkbox:hover + &__checkbox-indicator::after {
-    background-color: #ff8091;
+    background-color: $primary-color;
   }
 
   &__checkbox:active + &__checkbox-indicator::before,
   &__checkbox:active + &__checkbox-indicator::after {
-    background-color: #000000;
+    background-color: $black;
   }
 
   &__checkbox:active + &__checkbox-indicator,
   &__checkbox:active ~ &__text {
-    color: #000000;
+    color: $black;
 
-    border-color: rgba(#000000, 0.7);
+    border-color: rgba($black, 0.7);
     opacity: 0.7;
   }
 
@@ -221,9 +221,9 @@
     text-transform: uppercase;
     letter-spacing: 0.8px;
 
-    border: 1px dashed #000000;
+    border: 1px dashed $black;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: $white;
     cursor: pointer;
 
     transition: all 200ms ease-out;
@@ -236,7 +236,7 @@
     }
 
     &:active {
-      border-color: #000000;
+      border-color: $black;
     }
 
     &::before {
@@ -263,14 +263,14 @@
 
   &__file:focus + &__file-indicator,
   &__file:hover + &__file-indicator {
-    border-color: #ff8091;
-    color: #ff8091;
+    border-color: $primary-color;
+    color: $primary-color;
   }
 
   &__file:active + &__file-indicator {
-    color: #000000;
+    color: $black;
 
-    border-color: rgba(#000000, 0.7);
+    border-color: rgba($black, 0.7);
     opacity: 0.7;
   }
 
@@ -284,8 +284,8 @@
 
   &__file-wrapper:hover {
     .feedback__file-indicator {
-      border-color: #ff8091;
-      color: #ff8091;
+      border-color: $primary-color;
+      color: $primary-color;
     }
   }
 
@@ -299,9 +299,9 @@
     line-height: 25px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    color: #ffffff;
+    color: $white;
 
-    background-color: #ff8091;
+    background-color: $primary-color;
     cursor: pointer;
 
     transition: all 200ms ease-out;
@@ -315,11 +315,11 @@
     &:focus,
     &:hover {
       outline: none;
-      background-color: #000000;
+      background-color: $black;
     }
 
     &:active {
-      background-color: rgba(#ff8091, 0.7);
+      background-color: rgba($primary-color, 0.7);
       opacity: 0.7;
     }
   }
@@ -332,7 +332,7 @@
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #000000;
+    color: $black;
 
     opacity: 0.4;
 
