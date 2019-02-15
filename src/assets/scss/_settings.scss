@@ -103,6 +103,9 @@ $print-transparent-backgrounds: true;
 @include add-foundation-colors;
 $print-hrefs: true;
 
+//custom global
+$global-transition: all 200ms ease-out;
+
 // 2. Breakpoints
 // --------------
 

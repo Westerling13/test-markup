@@ -55,14 +55,14 @@
     border: none;
     border-bottom: 1px solid $black;
 
-    transition: all 200ms ease-out;
+    transition: $global-transition;
 
     &::placeholder {
       color: $black;
 
       opacity: 1;
 
-      transition: all 200ms ease-out;
+      transition: $global-transition;
     }
 
     &--text {
@@ -110,7 +110,7 @@
 
     opacity: 1;
 
-    transition: opacity 200ms ease-out;
+    transition: $global-transition;
   }
 
   &__email-placeholder {
@@ -124,7 +124,7 @@
 
     cursor: pointer;
 
-    transition: all 200ms ease-out;
+    transition: $global-transition;
 
     @media (min-width: $global-width) {
       width: 90%;
@@ -156,7 +156,7 @@
     border: 1px solid $black;
     border-radius: 4px;
 
-    transition: all 200ms ease-out;
+    transition: $global-transition;
 
     @media (min-width: $global-width) {
       margin-right: 14px;
@@ -177,7 +177,7 @@
       opacity: 0;
 
       transform: translate(-50%, -50%) rotate(45deg);
-      transition: all 200ms ease-out;
+      transition: $global-transition;
     }
 
     &::after {
@@ -237,7 +237,7 @@
     font-weight: 500;
     line-height: 19px;
 
-    transition: all 200ms ease-out;
+    transition: $global-transition;
 
     @media (min-width: $global-width) {
       font-size: 1.125rem;
@@ -265,7 +265,7 @@
     background-color: $white;
     cursor: pointer;
 
-    transition: all 200ms ease-out;
+    transition: $global-transition;
 
     @media (min-width: $global-width) {
       width: 277px;
@@ -344,7 +344,7 @@
     background-color: $primary-color;
     cursor: pointer;
 
-    transition: all 200ms ease-out;
+    transition: $global-transition;
 
     @media (min-width: $global-width) {
       width: 90%;

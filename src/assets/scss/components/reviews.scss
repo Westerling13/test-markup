@@ -72,8 +72,23 @@
     text-decoration: none;
     color: $primary-color;
 
+    transition: $global-transition;
+
     @media (min-width: $global-width) {
       margin-bottom: 12px;
+    }
+
+    &:focus,
+    &:hover {
+      color: darken($primary-color, 15%);
+
+      outline: none;
+    }
+
+    &:active {
+      color: $primary-color;
+      
+      opacity: 0.7;
     }
   }
 
