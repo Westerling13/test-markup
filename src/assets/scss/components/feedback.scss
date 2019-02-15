@@ -47,7 +47,7 @@
     padding: 18px 0 5px;
 
     font-family: inherit;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 25px;
     color: $black;
@@ -104,7 +104,7 @@
     top: 19px;
     left: 124px;
 
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
     color: #fb2d35;;
 
@@ -233,14 +233,14 @@
     margin: 0;
 
     font-family: $extra-font-family;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 19px;
 
     transition: all 200ms ease-out;
 
     @media (min-width: $global-width) {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 24px;
       font-weight: 500;
     }
@@ -271,7 +271,7 @@
       width: 277px;
       padding-left: 63px;
 
-      font-size: 16px;
+      font-size: 1rem;
       letter-spacing: 0.8px;
     }
 
@@ -334,7 +334,7 @@
     margin: 0 0 16px;
     padding: 17px 15px 18px;
 
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 25px;
     text-transform: uppercase;
@@ -367,7 +367,7 @@
   &__caption {
     margin: 0 0 8px;
     font-family: $extra-font-family;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     line-height: 24px;
     text-align: center;
